@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "required": true,
+      "type": "text"
+    },
+    "products": {
+      "collection": "product",
+      "via": "category"
+    }
+  }
+}
